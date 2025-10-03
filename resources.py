@@ -1,4 +1,3 @@
-# from dataclasses import dataclass
 import random
 
 def spin_the_wheel() -> int:
@@ -16,9 +15,10 @@ def find_all_occurrences(random_puzzle, letter) -> list:
         start_index = found_index + len(letter)
     return indices
 
-def flip_letters(random_puzzle: tuple[str, str], letter: str, indices: list) -> tuple:
-    for i in indices:
-        ...
+def flip_letters(random_puzzle: list[str], letter: str, indices: list) -> list:
+    for i in random_puzzle[0]:
+        pass
+    # PLEASE FIX ME IM SO CONFUSED IDK WHAT'S GOING ON
 
 wheel = [
     800,
@@ -104,10 +104,5 @@ consonants = [
 ]
 
 vowels = ["A", "E", "I", "O", "U"]
-
-# @dataclass
-# class Player:
-#     name: str
-#     money: int
 
 player = []
